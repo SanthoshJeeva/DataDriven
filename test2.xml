@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="org.test.FailedAll"></listener>
+</listeners>
+	<parameter name="email" value="user@phptravels.com"></parameter>
+	<parameter name="pass" value="demouser"></parameter>
+	<test name="Test" thread-count="5">
+		<classes>
+			<class name="org.test.Test1" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
